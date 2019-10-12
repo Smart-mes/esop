@@ -102,12 +102,12 @@ body {
 }
 
 body {
-  background: #eee;
-  font-family: Microsoft YaHei;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   color: #000;
-  margin: 0;
-  padding: 0;
+  font-family: Microsoft YaHei;
+  background: #eee;
 }
 
 dl,
@@ -123,9 +123,11 @@ dd {
   .swiper-container {
     height: 90%;
     .swiper-slide {
+      text-align: center;
       background: #fff;
       img {
-        vertical-align: bottom;
+        max-width: 100%;
+        max-height: 100%;
       }
     }
   }
@@ -146,11 +148,16 @@ dd {
   /*下载链接*/
   .link-box {
     height: 10%;
-    display: flex;
-    align-items: center;
+    position: relative;
   }
 
   .link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
     overflow: hidden;
     padding: 0 20px;
     height: 44px;
@@ -171,7 +178,7 @@ dd {
     dd a,
     dd a:link {
       padding-left: 3px;
-      color: #0000ee;
+      color: #00e;
       text-decoration: underline;
     }
   }
