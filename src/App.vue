@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <!--幻灯片-->
+    <!--/幻灯片-->
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div v-for="(item, i) in bannerList" :key="i" class="swiper-slide">
@@ -11,7 +11,7 @@
       <div class="swiper-button-prev"/>
       <div class="swiper-button-next"/>
     </div>
-    <!-- 下载链接 -->
+    <!-- /下载链接 -->
     <div class="link-box">
       <dl class="link">
         <dt>下载链接:</dt>
