@@ -31,8 +31,8 @@ export default {
   name: 'App',
   data () {
     return {
-      configureUrl: 'http://192.168.1.121:8012',
-      imgUrl: 'http://192.168.1.121:8020',
+      configureUrl: 'http://120.78.70.56:8012',
+      imgUrl: 'http://120.78.70.56:8020',
       bannerList: [],
       linkList: [],
     }
@@ -73,7 +73,7 @@ export default {
         alert('缺少Pid参数！')
         return Promise.reject(new Error('缺少Pid参数！'))
       }
-      return axios.get(`${this.configureUrl}/api/BESop`, { pid })
+      return axios.get(`${this.configureUrl}/api/BESop`, { params: { pid }})
         .then(res => res.data)
         .then(data => {
           if (!data.length) {
@@ -123,6 +123,9 @@ dd {
   .swiper-container {
     height: 90%;
     .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       background: #fff;
       img {
