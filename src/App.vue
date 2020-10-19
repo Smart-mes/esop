@@ -31,8 +31,8 @@ export default {
   name: 'App',
   data () {
     return {
-      configureUrl: 'http://120.78.70.56:8012',
-      imgUrl: 'http://120.78.70.56:8020',
+      configureUrl: 'http://8.129.76.46:8012',
+      imgUrl: 'http://8.129.76.46:8020',
       bannerList: [],
       linkList: [],
     }
